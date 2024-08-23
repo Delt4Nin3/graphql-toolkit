@@ -1,5 +1,5 @@
 {
-  "name": "generate-graphql-client",
+  "name": "@delt4nin3/generate-graphql-client",
   "description": "Generate TypeScript code using GraphQL introspection (from JSON file or URL).",
   "version": "1.0.3",
   "main": "./lib/index.js",

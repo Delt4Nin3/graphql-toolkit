@@ -61,6 +61,11 @@ export interface Field {
   $alias?: string
 
   /**
+   * Name for the field.
+   */
+  $name?: string
+
+  /**
    * Arguments for the field.
    */
   $args?: Args
@@ -317,7 +322,11 @@ export const generateQuery = (function () {
           prop = subField.$alias + ': '
         }
 
-        prop += key
+        if (subField.$name) {
+          prop += subField.$name
+        } else {
+          prop += key
+        }
 
         if (subField.$args) {
           prop = append(

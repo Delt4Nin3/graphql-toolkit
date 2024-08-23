@@ -1,5 +1,5 @@
 {
-  "name": "generate-graphql-query",
+  "name": "@delt4nin3/generate-graphql-query",
   "description": "Generate GraphQL query from JavaScript object.",
   "version": "1.1.1",
   "main": "lib/index.js",
